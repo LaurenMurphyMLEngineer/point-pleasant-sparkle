@@ -1,68 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Airbnb Host Cleaning • Point Pleasant Sparkle</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Airbnb Host Cleaning • Point Pleasant Sparkle</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header class="hero small-hero">
-    <h1>Airbnb & Short‑Term Rental Turnovers</h1>
-    <p>Fast • Reliable • Guest‑Ready Every Time</p>
-  </header>
 
-  <section class="section">
+<header>
+    <div class="logo">Point Pleasant Sparkle</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Airbnb & Short-Term Rental Turnovers</h1>
+    <p>Fast • Reliable • Guest-Ready Every Time</p>
+</section>
+
+<section class="section">
     <h2>Why Hosts Choose Us</h2>
     <ul>
-      <li>✔ Same‑day turnovers</li>
+      <li>✔ Same-day turnovers</li>
       <li>✔ Linen change & laundry service</li>
       <li>✔ Restocking essentials (customizable)</li>
       <li>✔ Damage & missing item reporting</li>
       <li>✔ Deep cleans between bookings</li>
     </ul>
-  </section>
+</section>
 
-  <section class="section">
+<section class="section">
     <h2>Turnover Pricing</h2>
     <p>Use our main pricing calculator to get a fast estimate.</p>
     <a class="btn" href="index.html#pricing">Open Calculator</a>
-  </section>
+</section>
 
-  <section class="section">
+<section class="section" id="contact">
     <h2>Host Inquiry Form</h2>
     <form action="https://formsubmit.co/YOUR-EMAIL" method="POST">
       <input type="hidden" name="_captcha" value="false" />
       <input type="hidden" name="_subject" value="New Airbnb Host Inquiry" />
-
-      <label>Name</label>
-      <input type="text" name="name" required />
-
-      <label>Email</label>
-      <input type="email" name="email" required />
-
-      <label>Property Address</label>
-      <input type="text" name="address" required />
-
-      <label>Number of Bedrooms</label>
-      <input type="number" name="bedrooms" min="1" required />
-
+      <label>Name</label><input type="text" name="name" required />
+      <label>Email</label><input type="email" name="email" required />
+      <label>Property Address</label><input type="text" name="address" required />
+      <label>Number of Bedrooms</label><input type="number" name="bedrooms" min="1" required />
       <label>Turnover Frequency</label>
       <select name="frequency" required>
         <option>After every booking</option>
         <option>Weekly</option>
-        <option>Bi‑weekly</option>
+        <option>Bi-weekly</option>
       </select>
-
-      <label>Notes</label>
-      <textarea name="notes" rows="4"></textarea>
-
+      <label>Notes</label><textarea name="notes" rows="4"></textarea>
       <button type="submit" class="btn">Submit Inquiry</button>
     </form>
-  </section>
+</section>
 
-  <footer>
-    <p>© 2025 Point Pleasant Sparkle</p>
-  </footer>
+<script src="//code.tidio.co/YOUR_TIDIO_KEY.js" async></script>
+
+<footer>
+<p>© 2025 Point Pleasant Sparkle</p>
+</footer>
 </body>
 </html>
