@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Point Pleasant Sparkle – Luxury Cleaning Services</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Point Pleasant Sparkle</div>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Luxury Cleaning for Homes & Rentals</h1>
+    <p>Specializing in Airbnb turnovers, summer rentals, and high-end home cleaning.</p>
+    <a href="#contact" class="btn">Get a Quote</a>
+</section>
+
+<section id="services" class="services">
+    <h2>Our Luxury Cleaning Services</h2>
+    <p>Specialized in Airbnb turnovers, summer rentals, and upscale residential care.</p>
+    <div class="service-grid">
+        <div class="service-card"><h3>Airbnb / STR Turnover</h3><p>Guest-ready cleaning, restocking, staging, laundry & inspection.</p></div>
+        <div class="service-card"><h3>Summer Rental Weekly Turnover</h3><p>Peak season cleaning for beach houses & weekly tenants.</p></div>
+        <div class="service-card"><h3>Luxury Home Premium Cleaning</h3><p>High-end detailing for upscale residences.</p></div>
+        <div class="service-card"><h3>Standard Cleaning</h3><p>Routine upkeep to maintain a spotless home.</p></div>
+        <div class="service-card"><h3>Deep Cleaning</h3><p>Full detail cleaning, baseboards, grout, appliances & more.</p></div>
+        <div class="service-card"><h3>Move In / Move Out</h3><p>Top-to-bottom preparation for new tenants or home buyers.</p></div>
+    </div>
+</section>
+
+<section id="pricing" class="pricing">
+    <h2>Instant Pricing Calculator</h2>
+    <p>Get an estimate before you book.</p>
+    <div class="calculator">
+        <label>Home Size (sq ft)</label>
+        <input id="sqft" type="number" placeholder="Example: 1500">
+        <label>Service Type</label>
+        <select id="serviceType">
+            <option value="">Select</option>
+            <option value="airbnb">Airbnb / STR Turnover</option>
+            <option value="summer">Summer Rental Weekly Turnover</option>
+            <option value="luxury">Luxury Home Premium Cleaning</option>
+            <option value="standard">Standard Cleaning</option>
+            <option value="deep">Deep Cleaning</option>
+            <option value="move">Move In / Move Out</option>
+        </select>
+        <label>Bedrooms</label>
+        <input id="bedrooms" type="number" value="2">
+        <label>Bathrooms</label>
+        <input id="bathrooms" type="number" value="1">
+        <button onclick="calculatePrice()">Calculate Price</button>
+        <div id="priceResult"></div>
+    </div>
+</section>
+
+<section id="booking" class="booking">
+    <h2>Book Your Cleaning</h2>
+    <p>Select a date and time that works for you.</p>
+    <div class="calendly-inline-widget"
+         data-url="https://calendly.com/YOUR-CALENDLY-USERNAME"
+         style="min-width:320px;height:700px;">
+    </div>
+    <script src="https://assets.calendly.com/assets/external/widget.js"></script>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Request a Quote</h2>
+    <form id="contactForm">
+        <input name="name" placeholder="Full Name" required>
+        <input name="email" type="email" placeholder="Email" required>
+        <input name="phone" placeholder="Phone" required>
+        <select name="service" required>
+            <option value="">Select Service</option>
+            <option>Airbnb / Short-Term Rental Turnover</option>
+            <option>Summer Rental Weekly Turnover</option>
+            <option>Luxury Home Premium Cleaning</option>
+            <option>Standard Cleaning</option>
+            <option>Deep Cleaning</option>
+            <option>Move In / Move Out</option>
+        </select>
+        <textarea name="details" placeholder="Tell us about your home"></textarea>
+        <button type="submit" class="btn">Submit Request</button>
+    </form>
+    <div id="formMessage"></div>
+</section>
+
+<footer>
+    <p>© 2025 Point Pleasant Sparkle — Luxury Cleaning</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
