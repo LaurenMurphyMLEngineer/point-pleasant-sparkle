@@ -1,7 +1,7 @@
 document.getElementById("contactForm").addEventListener("submit", function(e){
     e.preventDefault();
     const formData = new FormData(this);
-    fetch("https://formsubmit.co/YOUR_EMAIL_HERE", {method:"POST", body:formData})
+    fetch("https://formsubmit.co/damienkitty@gmail.com", {method:"POST", body:formData})
     .then(()=>{document.getElementById("formMessage").innerHTML="<p style='color:#FFD700;'>Thank you! We’ll contact you soon.</p>";this.reset();})
     .catch(()=>{document.getElementById("formMessage").innerHTML="<p style='color:red;'>Something went wrong.</p>";});
 });
